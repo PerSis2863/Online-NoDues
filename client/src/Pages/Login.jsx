@@ -135,8 +135,8 @@ const Login = () => {
                     </form>
                 </div>
             <footer className="madebyFooter">
-                Made by <a href="https://linkedin.com/in/iamhk12" target="_blank" rel="noreferrer" >Himanshu Kothari </a>, <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/nishtharaut" >Nishtha Raut</a>, 
-                <a href="https://www.linkedin.com/in/jamal-mydeen-09887924a"  target="_blank" rel="noreferrer"> Jamal Mydeen </a>
+                Made by <a href="" target="_blank" rel="noreferrer" >Aditya Bhatt </a>, <a target="_blank" rel="noreferrer" href="" >Pracheta Ghosalkar</a>, 
+                <a href=""  target="_blank" rel="noreferrer"> Sahil Singh </a>, <a href=""  target="_blank" rel="noreferrer"> Aryan Nair </a>
             </footer>
             </div>
         </>
