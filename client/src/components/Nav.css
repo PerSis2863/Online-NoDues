@@ -1,0 +1,130 @@
+.navbarmusic {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 50px;
+    color: #000;
+    position: sticky;
+    top: 0;
+    min-width: 100%;
+    z-index: 99;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px) saturate(180%);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.navbar__logo {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-left: 30px;
+    transition: transform 0.3s ease;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.02);
+}
+
+.navbar__logo a {
+    cursor: pointer;
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar__logo img {
+    height: 45px;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
+.navbar__logo img:hover {
+    transform: scale(1.1);
+}
+
+.navbar__listms {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-right: 30px;
+    gap: 20px;
+}
+
+.navbar__listms li a {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', 'Poppins', sans-serif;
+    color: #000;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar__listms li a:hover {
+    background: rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.navbar__listms li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar__listms li a:hover::after {
+    width: 70%;
+}
+
+.navbar__menu {
+    display: none;
+    cursor: pointer;
+}
+
+.navbar__menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.navbar__menu-icon span {
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar__menu-icon.open span:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+}
+
+.navbar__menu-icon.open span:nth-child(2) {
+    opacity: 0;
+    transform: translateX(-20px);
+}
+
+.navbar__menu-icon.open span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+}
