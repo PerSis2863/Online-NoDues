@@ -11,10 +11,10 @@ app.use(cors());
 const port = process.env.PORT || 3306;
 
 const dbConfig = {
-  host: 'duesbridge-rds.c1wkmaomer43.ap-south-1.rds.amazonaws.com',
-  user: 'aditya',
-  password: 'Persistivinity2863',
-  database: 'nodues',
+    host: process.env.DB_HOST,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
 };
 
 const connection = mysql.createConnection(dbConfig);
